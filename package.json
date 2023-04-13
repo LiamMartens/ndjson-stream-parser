@@ -1,18 +1,27 @@
 {
   "name": "ndjson-stream-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "NDJSON Chunk Parser",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/types/index.d.ts",
+  "files": ["lib"],
   "scripts": {
     "build:esm": "swc -C module.type=es6 -d ./lib/esm ./src",
     "build:cjs": "swc -C module.type=commonjs -d ./lib/cjs ./src",
     "build:types": "tsc -p .",
     "test": "jest ./**/*.test.*"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["stream", "json"],
+  "author": "Liam Martens <hi@liammartens.com>",
+  "homepage": "https://github.com/LiamMartens/ndjson-stream-parser",
+  "bugs": {
+    "url": "https://github.com/LiamMartens/ndjson-stream-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LiamMartens/ndjson-stream-parser"
+  },
   "license": "ISC",
   "dependencies": {
     "mitt": "^3.0.0"
